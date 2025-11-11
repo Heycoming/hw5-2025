@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
     document.querySelector("#play").addEventListener("click", () => {
         console.log("Play Video");
         video.play();
-        volumeDisplay.textContent = slider.value + "%";
+        volumeDisplay.textContent = Math.round(video.volume * 100) + "%";
     });
 
     document.querySelector("#pause").addEventListener("click", () => {
