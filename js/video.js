@@ -10,7 +10,6 @@ window.addEventListener("load", function() {
 
     let slider = document.querySelector("#slider");
     let volumeDisplay = document.querySelector("#volume");
-    volumeDisplay.textContent = slider.value + "%";
 
     document.querySelector("#play").addEventListener("click", () => {
         console.log("Play Video");
